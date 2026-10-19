@@ -12,7 +12,13 @@ def division(a, b):
         return "Cannot Divide by Zero."
     else:
         return a / b
+def getValues(a, b):
+    f_num= a
+    s_num= b
+    return f_num, s_num
 
+f_input, s_input= getValues(a, b)
+    
 print("Select operation:")
 print("1. Addition")
 print("2. Subtraction")
@@ -29,5 +35,8 @@ elif choice == '3':
 elif choice == '4':
     print("Result:", division(a, b))
 
-    #Madlos - Helped with the choice and The Variables
-    #Tanupan - Helped with the Functions and The Variables
+print(f"First number is {f_input}")
+print(f"Second number is {s_input}")
+
+# Madlos - Helped with the choices, variables, and input of numbers.
+# Tanupan - Helped with the functions, return statements, and displaying the results.
